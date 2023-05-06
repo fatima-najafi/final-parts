@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -15,7 +15,7 @@ ul {
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   background-color: #f7f7f9;
 }
 
@@ -81,6 +81,14 @@ header {
 }
 
 .headline {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.about-headline {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
@@ -262,7 +270,7 @@ button[disabled] {
 }
 
 .about-heading-small {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -299,7 +307,7 @@ button[disabled] {
 }
 
 .about-skill-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   padding-left: 1em;
@@ -336,7 +344,7 @@ button[disabled] {
 .contact-me-form-paragraph {
   text-align: center;
   margin-top: 0.75em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -363,7 +371,7 @@ textarea:focus {
   border-radius: 0.75em;
   width: 100%;
   border: 1px solid #cfd8dc;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -398,12 +406,21 @@ textarea:focus {
     display: flex;
   }
 
+  .headline {
+    margin-top: 363px;
+    margin-left: 129px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
   .headline-main {
     margin-top: 5em;
     background-image: url(./assets/Header\ bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    left: 34.6px;
+    height: 100vh;
   }
 
   .headline-heading {
@@ -418,6 +435,7 @@ textarea:focus {
     font-size: 20px;
     line-height: 28px;
     color: #344563;
+    width: 80%;
   }
 
   /* Header Section Styling Ends Here */
@@ -450,8 +468,7 @@ textarea:focus {
 
   .headline-skill-container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 2em;
+    grid-template-columns: 2fr 2fr;
   }
 
   .about-skills-container {
